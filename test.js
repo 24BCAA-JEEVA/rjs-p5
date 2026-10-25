@@ -1,13 +1,13 @@
 const assert = require("assert");
 
-const fahrenheit = require("./index");
+const sum = require("./index");
 
-const expected = [32, 68, 86, 104];
+const expected = 150;
 
-assert.deepStrictEqual(
-    fahrenheit,
+assert.strictEqual(
+    sum,
     expected,
-    "Incorrect Fahrenheit conversion using map()."
+    "Incorrect sum. Use reduce() to calculate the total."
 );
 
 console.log("All tests passed!");

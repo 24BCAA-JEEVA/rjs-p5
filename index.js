@@ -1,16 +1,8 @@
-// Temperature Converter using map()
 
-const celsius = [0, 20, 30, 40];
+const numbers = [10, 20, 30, 40, 50];
 
-// TODO:
-// Convert the Celsius temperatures to Fahrenheit
-// Formula: (C × 9/5) + 32
-// Use the map() function and store the result in fahrenheit.
+let sum = 0;
 
-let fahrenheit = [];
+sum = numbers.reduce((total, num) => total + num, 0);
 
-// Write your code below
-
-
-// Do not modify this line
-module.exports = fahrenheit;
+module.exports = sum;
